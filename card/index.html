@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Card</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light">  
+		<div class="container">
+			<div class="nav1">
+				<button class="btn btn-default filter-button all active" data-filter="all">All</button>
+	        	<button class="btn btn-default filter-button recipes" data-filter="recipes">Recipes</button>   
+	            <button class="btn btn-default filter-button profile" data-filter="profile">Profile</button>
+	            <button class="btn btn-default filter-button scenery" data-filter="scenery">Scenery</button>
+	        </div>
+	        <div class="searchbar">
+	          <input class="search_input" type="text" name="" placeholder="Search">
+	          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+	        </div>
+	    </div>
+	</nav>
+	<div class="arr" onclick="topFunction()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+	<div class="row">
+		<div class="card col-lg-3 col-md-4 col-sm-4 col-xs-6 filter recipes pizza">
+	        <img src="img/pizza.jpg" class="img-responsive image">
+	        <div class="heading">
+	        	<button class="bton" onclick="myFunction()"><i class="book far fa-bookmark"></i></button>
+	        </div>
+	        <div class="body">
+	        	<h2>Keema Pizza</h2>
+	        	<div class="row info">
+	        		<div class="col-md-4">
+		        		<i class="fa fa-clock-o "></i> 30 minutes
+		        	</div>	        		
+		        	<div class="col-md-4">
+		        		<i class="fas fa-utensils" aria-hidden="true"></i> 7 servings
+		        	</div>
+		        	<div class="col-md-4">
+		        		<i class="fas fa-fire"></i> 501 calories
+		        	</div>
+	        	</div>
+	        	<p>
+		        	Ratings: 
+		        	<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</p>
+				<button type="button" class="btn btn-dark" onclick="pizzafunction()">Full Recipe</button>
+	        </div>	        
+	    </div>
+	    <div class="pizzafull fullbody">
+	    	<div class="close">
+		    	<span class="float-right" onclick="closefunction()"><button><i class="fas fa-times"></i></button></span>
+		    </div>
+	    	<div class="container top">
+		        <h2>Keema Pizza</h2><br>
+		        <img src="img/pizza.jpg" class="img-responsive" height="550" width="100%" align="centre">
+		        	<div class="row info">
+		        		<div class="col-md-4">
+		        			<h4><i class="fa fa-clock-o "></i> 30 minutes</h4>
+		        		</div>	        		
+		        		<div class="col-md-4">
+		        			<h4><i class="fas fa-utensils" aria-hidden="true"></i> 7 servings</h4>
+		        		</div>
+		        		<div class="col-md-4">
+		        			<h4><i class="fas fa-fire"></i> 501 calories</h4>
+		        		</div>
+		        	</div>	
+		        	<br>
+		        	<h4>Ingredients of Keema Pizza</h4><hr>
+					- 2 cup minced mutton<br>
+					- 2 tablespoon pizza sauce<br>
+					- 2 large pizza base<br><br>
+					<h5>For Seasoning</h5><hr>
+					- salt as required<br>
+					- red pepper as required<br>
+					- black pepper as required<br>
+					- chilli flakes as required<br><br>
+					<h5>For Garnishing</h5><hr>
+					- 1 tablespoon coriander leaves<br><br>
+					<h5>For Toppings</h5><hr>
+					- 1 cup mozzarella<br>
+					- 2 sliced tomato<br>
+					- 4 sliced onion<br><br>
+					<h4>Process</h4><hr>
+					<h5>Step 1</h5>
+					To start with this delicious recipe, take the pizza bases and apply pizza spread or tomato spread on it.<br><br>
+					<h5>Step 2</h5>
+					Next, top the bases with sliced tomatoes and onions. Decorate these slices as per your wish.<br><br>
+					<h5>Step 3</h5>
+					On the other hand, cook the keema in a pressure cooker and add salt or pepper to it as per your taste. Once cooked, spread the keema/minced mutton on the pizza bases.<br><br>
+					<h5>Step 4</h5>
+					Next, sprinkle some mozzarella cheese on the pizza bases. Add salt, pepper, chili flakes as per your taste onto it.<br><br>
+					<h5>Step 5</h5>
+					Finally, bake these pizza bases at 150 degree Celsius for just 15 minutes. Once baked, take them out of the oven and cut it into triangular slices. You can also garnish it with coriander leaves. Serve hot.<br><br>
+					<div class="rating">
+						<h3>Rate this Recipe</h3>
+						<input type="radio" name="rating" id="rating-5">
+				      	<label for="rating-5"></label>
+				      	<input type="radio" name="rating" id="rating-4">
+				      	<label for="rating-4"></label>
+				      	<input type="radio" name="rating" id="rating-3">
+				      	<label for="rating-3"></label>
+				      	<input type="radio" name="rating" id="rating-2">
+				      	<label for="rating-2"></label>
+				      	<input type="radio" name="rating" id="rating-1">
+				      	<label for="rating-1"></label>
+					</div>
+			</div>
+	    </div>
+	    <div class="card col-lg-3 col-md-4 col-sm-4 col-xs-6 filter profile palistha">
+	        <img src="img/palistha.jpg" class="img-responsive image">
+	        <div class="heading">
+	        	<button class="bton" onclick="myFunction1()"><i class="book1 far fa-bookmark"></i></button>
+	        </div>
+	        <div class="body">
+	        	<h2>Palistha Shrestha</h2>
+	        	<div class="row logo">
+	        		<div class="col-md-3">
+	        			<i class="fab fa-instagram h"></i>
+	        		</div>	        		
+	        		<div class="col-md-3">
+	        			<i class="fab fa-facebook h"></i>
+	        		</div>
+	        		<div class="col-md-3">
+	        			<i class="fab fa-viber h"></i>
+	        		</div>
+	        		<div class="col-md-3">
+	        			<i class="fab fa-whatsapp h"></i>
+	        		</div>
+	        	</div>
+	        	<p>
+		        	Student
+				</p>
+				<button type="button" class="btn btn-dark" onclick="palisthafunction()">Full Detail</button>
+	        </div>
+	    </div>
+	    <div class="palisthafull fullbody">
+		    <div class="close">
+		    	<span class="float-right" onclick="closefunction()"><button><i class="fas fa-times"></i></button></span>
+		    </div>
+	    	<div class="container top">
+		        <h2>Palistha Shrestha</h2><br>
+		        <img src="img/palistha.jpg" class="img-responsive" height="550" width="100%" align="centre">
+		        	<div class="row logo">
+		        		<div class="col-md-3">
+			        		<h4><i class="fab fa-instagram h"> Instagram</i></h4>
+			        	</div>	        		
+			       		<div class="col-md-3">
+			       			<h4><i class="fab fa-facebook h"> Facebook</i></h4>
+			       		</div>
+			       		<div class="col-md-3">
+			       			<h4><i class="fab fa-viber h"> Viber</i></h4>
+			       		</div>
+			       		<div class="col-md-3">
+			       			<h4><i class="fab fa-whatsapp h"> Whatsapp</i></h4>
+		        		</div>
+		        	</div>
+			        <br>
+			        <h4>Details</h4><hr>
+					Age- 11years<br>
+					Address- Koteshwor, Kathmandu<br>
+					Contact number- 9843678889<br>
+					Father's Name- Bimal Lal Shrestha<br>
+					Mother's Name- Sarina Shrestha<br>
+					D.O.B.- 29 August,2009<br>
+					Nationality- Nepali<br>
+					E-mail- palisthashrestha@gmail.com<br>
+					Blood group- A+<br>
+					<br><br>
+					<h4>Education</h4><hr>
+					<h6>Keta Keti Pathsala</h6>
+					Sorakhutte, Kathmandu<br>
+					Playgroup - U.K.G.<br>
+					2012 - 2015<br>
+					<h6>Modern Indian School</h6>
+					Chobhar, Kathmandu<br>
+					Class 1 - Ongoing<br>
+					2016 - ongoing<br><br><br>
+					<h4>About</h4><hr>
+					<h6>A creative, intelligent person with good learning  skills and has the ability to remember things easily. Currently studying in class 6 and who is also the deputy head girl of the junior wing in her school. Has actively taken part in numerous competitions and won prizes for not only academics but also for co-curricural activities. Aspires to become a dermatologist in her future.</h6>
+					<h6>In her free time loves to paint, sketch, do crafts and play badminton.</h6><br><br>
+					<h4>Photos</h4><hr>
+					<div class="row">
+						<div class="col-md-3 gallery">
+							<img src="img/pali.jpg" height="350" width="350">
+						</div>
+						<div class="col-md-3 gallery">
+							<img src="img/palis.jpg" height="350" width="350">
+						</div>
+						<div class="col-md-3 gallery">
+							<img src="img/palist.jpg" height="350" width="350">							
+						</div>
+					</div>
+			</div>
+		</div>
+	    <div class="card col-lg-3 col-md-4 col-sm-4 col-xs-6 filter scenery chhahare">
+	        <img src="img/hills.jpg" class="img-responsive image">
+	        <div class="heading">
+	        	<button class="bton" onclick="myFunction2()"><i class="book2 far fa-bookmark"></i></button>
+	        </div>
+	        <div class="body">
+	        	<h2>Chhahare, Nuwakot</h2>
+	        	<div class="row info">
+	        		<div class="col-md-6">
+	        			<i class="fa fa-clock-o "></i> 2 hours
+	        		</div>	        		
+	        		<div class="col-md-6">
+	        			<i class="fas fa-map-marked-alt"></i> 19 km
+	        		</div>
+	        	</div>
+	        	<p>
+		        	Chhahare is located in the region of Central Region. Central Region's capital Kathmandu is 
+				</p>
+				<button type="button" class="btn btn-dark" onclick="chhaharefunction()">Full Detail</button>
+	        </div>
+	    </div>
+	    <div class="chhaharefull fullbody">
+		    <div class="close">
+		    	<span class="float-right" onclick="closefunction()"><button><i class="fas fa-times"></i></button></span>
+		    </div>
+	    	<div class="container top">
+		        <h2>Chhahare, Nuwakot</h2><br>
+		        <img src="img/hills.jpg" class="img-responsive" height="550" width="100%" align="centre">
+		        	<div class="row info">
+	        		<div class="col-md-6">
+	        			<h4><i class="fa fa-clock-o "></i> 2 hours</h4>
+	        		</div>	        		
+	        		<div class="col-md-6">
+	        			<h4><i class="fas fa-map-marked-alt"></i> 19 km</h4>
+	        		</div>
+	        	</div>
+			        <br>			        
+			        <h4>Details</h4><hr>
+					<h6>Municipality name: Thansing</h6><br>
+					<h6>Region name: Nuwakot</h6><br>
+					<h6>Country: Nepal</h6><br><br>
+					<h4>About</h4><hr>
+					<h6>Chhahare, Nuwakot is a place in the region of Central Region in Nepal.</h6><br>
+					<h6>Nuwakot District, a part of Bagmati Province, is one of the seventy-seven districts of Nepal. The district, with Bidur as its district headquarters, covers an area of 1,121 km2 (433 sq mi) and had a population of 288,478 in 2001 and 277,471 in 2011. It is a historically important district in Nepal. Prithvi Narayan Shah died in Devighat of Nuwakot.</h6><br>
+					<h6>Nuwakot, being a hilly area with very less plains, most of the areas are still undeveloped. In last few years, huge changes are observable. The city areas are provided with schools, colleges, hospitals and the road infrastructure is also developed. Two hydro power stations are currently in operation, and from 2020 the first part of the biggest solar power station (Nuwakot Solar Power Station) was consented to the electric grid of Nepal. People are dependent on agriculture, teaching, foreign economy, livestock farming, business, hotels, Agro Tourism, Eco-Tourism and Khadya Bank, etc.</h6>
+					<br><br>
+					<h4>Map</h4><hr>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225767.32781654154!2d85.12800244515407!3d27.85238802435661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ead94a1d7296c5%3A0xf52bf1ef93f266e1!2sNuwakot!5e0!3m2!1sen!2snp!4v1627726945009!5m2!1sen!2snp" width="650" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+	    <div class="card col-lg-3 col-md-4 col-sm-4 col-xs-6 filter kachori recipes">
+	        <img src="img/kachodi.jpg" class="img-responsive image">
+	        <div class="heading">
+	        	<button class="bton" onclick="myFunction3()"><i class="book3 far fa-bookmark"></i></button>
+	        </div>
+	        <div class="body">
+	        	<h2>Kachori</h2>
+	        	<div class="row info">
+	        		<div class="col-md-4">
+	        			<i class="fa fa-clock-o "></i> 2 hours 45 mins
+	        		</div>	        		
+	        		<div class="col-md-4">
+	        			<i class="fas fa-utensils" aria-hidden="true"></i> 12 servings
+	        		</div>
+	        		<div class="col-md-4">
+	        			<i class="fas fa-fire"></i> 171 calories
+	        		</div>
+	        	</div>
+	        	<p>
+		        	Ratings: 
+		        	<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+				</p>
+				<button type="button" class="btn btn-dark" onclick="kachorifunction()">Full Recipe</button>
+	        </div>	        
+	    </div>
+	    <div class="kachorifull fullbody">
+	    	<div class="close">
+		    	<span class="float-right" onclick="closefunction()"><button><i class="fas fa-times"></i></button></span>
+		    </div>
+	    	<div class="container top">
+		        <h2>Kachori</h2><br>
+		        <img src="img/kachodi.jpg" class="img-responsive" height="500" width="100%" align="centre">
+		        	<div class="row info">
+			        	<div class="col-md-4">
+			        		<i class="fa fa-clock-o "></i> 2 hours 45 mins
+			       		</div>	        		
+			       		<div class="col-md-4">
+			       			<i class="fas fa-utensils" aria-hidden="true"></i> 12 servings
+			       		</div>
+			       		<div class="col-md-4">
+			       			<i class="fas fa-fire"></i> 171 calories
+			       		</div>
+			        </div>
+		        	<br>
+		        	<h4>Ingredients of Kachori</h4>
+		        	<h5>For Dough</h5><hr>
+					- 2 cups all-purpose flour (maida), 250 grams<br>
+					- ½ teaspoon salt<br>
+					- ¼ cup Ghee or oil<br>
+					- ½ cup water or add as required<br><br>
+					<h5>For Lentil Stuffing</h5><hr>
+					- ½ cup moong dal<br>
+					- ½ tablespoon Ghee<br>
+					- ¼ teaspoon turmeric powder<br>
+					- ½ teaspoon red chilli powder><br>
+					- ½ teaspoon cumin powder<br>
+					- ½ teaspoon dry ginger powder<br>
+					- 1 teaspoon coriander powder<br>
+					- 1 teaspoon crushed fennel seeds<br>
+					- 1 teaspoon dry mango powder <br>
+					- salt as required<br><br>
+					<h4>Process</h4>
+					<h5>Making Kachori Dough</h5><hr>
+					<h5>Step 1</h5>
+					Take 2 cups all purpose flour (maida) and salt in a bowl or pan. mix very well.<br><br>
+					<h5>Step 2</h5>
+					Add ¼ cup ghee.<br><br>
+					<h5>Step 3</h5>
+					With your fingertips mix the ghee with the flour for a few minutes till you get a breadcrumb like texture in the mixture.<br><br>
+					<h5>Step 4</h5>
+					Add water in parts and knead the dough till soft.<br><br>
+					<h5>Step 5</h5>
+					Cover the dough with a moist muslin or kitchen towel and let it rest for 30 minutes.<br><br><br>
+					<h5>Making Moong Dal Stuffing</h5><hr>
+					<h5>Step 1</h5>
+					Rinse ½ cup moong dal in a bowl. Soak moong dal with enough water for 2 hours.<br><br>
+					<h5>Step 2</h5>
+					Later drain all the water very well and add the soaked moong lentils in a grinder jar.<br><br>
+					<h5>Step 3</h5>
+					Grind to a roughly coarse mixture.<br><br>
+					<h5>Step 4</h5>
+					Then heat a pan. Add ½ tablespoon ghee.<br><br>
+					<h5>Step 5</h5>
+					Once the ghee melts, keep the flame to the lowest or switch off the flame.<br><br>
+					<h5>Step 6</h5>
+					Add all the spice powders one by one.<br><br>
+					<h5>Step 7</h5>
+					Keep the flame to its lowest and mix very well. do make sure that the spices do not burn.<br><br>
+					<h5>Step 8</h5>
+					Then add the coarsely ground moong dal. Also add salt and 1 pinch of asafoetida.<br><br>
+					<h5>Step 9</h5>
+					On a low flame mix very well.<br><br>
+					<h5>Step 10</h5>
+					Saute with non-stop stirring for 3 to 4 minutes on a low flame. Check the taste and if required you can add more spice powders like red chili powder and mango powder or salt. Let the mixture become warm or cool down.<br><br>
+					<h5>Step 11</h5>
+					Now make small balls from this moong dal mixture. You can also spread some oil on your palms while making the balls. Keep aside.<br><br><br>
+					<h5>Assembling, Stuffing And Shaping</h5><hr>
+					<h5>Step 1</h5>
+					After 30 minutes, lightly knead the dough.<br><br>
+					<h5>Step 2</h5>
+					Roll the dough into a log. Now cut the dough in equal portions. This will depend on the number of moong dal mixture balls that were made. Take a portion of the cut dough and flatten it with your fingers. Keep the edges thin while flattening. You can also use a rolling pin (belan) to flatten.<br><br>
+					<h5>Step 3</h5>
+					Now place the moong dal stuffing ball on the dough. Flatten the moong dal stuffing ball.<br><br>
+					<h5>Step 4</h5>
+					Bring the edges of the dough together and join them at the center. Excess dough can be pinched off and removed.<br><br>
+					<h5>Step 5</h5>
+					Flatten the top and then gently roll the kachori with a rolling pin to get a medium thickness kachori. Stuff and prepare all kachori this way. Keep them covered under a moist muslin or cotton cloth, so that they do not dry up.<br><br><br>
+					<h5>Frying Kachori</h5><hr>
+					<h5>Step 1</h5>
+					Heat oil for frying and keep the flame to a low. When the oil is just hot enough, you can add the kachoris.<br><br>
+					<h5>Step 2</h5>
+					When the kachori start puffing up, then gently nudge each kachori with a spoon, so that they puff up well.<br><br>
+					<h5>Step 3</h5>
+					When the base becomes light golden, then gently turn them over. The frying takes about 7 to 9 minutes. So one has to be patient.<br><br>
+					<h5>Step 4</h5>
+					Continue to fry on a low to low-medium flame till they become golden. While frying you can turn them often to get an even color. Regulate the temperature from low to low-medium as required.<br><br>
+					<h5>Step 5</h5>
+					Fry till they become golden and nicely crisp from outside.<br><br>
+					<h5>Step 6</h5>
+					Place khasta kachori on kitchen paper towels so that excess oil is absorbed. Fry all kachori this way.<br><br>
+					<h5>Step 7</h5>
+					Serve khasta kachori warm accompanied with some fried & salted green chilies, tamarind dates chutney and green chutney. You can also serve them with chili garlic chutney or curd.<br><br>
+					<div class="rating">
+					<h3>Rate this Recipe</h3>
+					<input type="radio" name="rating" id="rating-5">
+			      	<label for="rating-5"></label>
+			      	<input type="radio" name="rating" id="rating-4">
+			      	<label for="rating-4"></label>
+			      	<input type="radio" name="rating" id="rating-3">
+			      	<label for="rating-3"></label>
+			      	<input type="radio" name="rating" id="rating-2">
+			      	<label for="rating-2"></label>
+			      	<input type="radio" name="rating" id="rating-1">
+			      	<label for="rating-1"></label>
+				</div>
+			</div>
+	    </div>
+	    <div class="card col-lg-3 col-md-4 col-sm-4 col-xs-6 filter patan scenery">
+	        <img src="img/busy night.jpg" class="img-responsive image">
+	        <div class="heading">
+	        	<button class="bton" onclick="myFunction4()"><i class="book4 far fa-bookmark"></i></button>
+	        </div>
+	        <div class="body">
+	        	<h2>Patan Durbar Square</h2>
+	        	<div class="row info">
+	        		<div class="col-md-6">
+	        			<i class="fa fa-clock-o "></i> 20 mins
+	        		</div>	        		
+	        		<div class="col-md-6">
+	        			<i class="fas fa-map-marked-alt"></i> 6.9 km
+	        		</div>
+	        	</div>
+	        	<p>
+		        	Patan Durbar Square is situated at the centre of the city of Lalitpur in Nepal. 
+				</p>
+				<button type="button" class="btn btn-dark" onclick="patanfunction()">Full Detail</button>
+	        </div>
+		</div>
+		<div class="patanfull fullbody">
+		    <div class="close">
+		    	<span class="float-right" onclick="closefunction()"><button><i class="fas fa-times"></i></button></span>
+		    </div>
+	    	<div class="container top">
+		        <h2>Patan Durbar Square</h2><br>
+		        <img src="img/busy night.jpg" class="img-responsive" height="550" width="100%" align="centre">
+		        	<div class="row info">
+		        		<div class="col-md-6">
+		        			<h4><i class="fa fa-clock-o "></i> 20 mins</h4>
+		        		</div>	        		
+		        		<div class="col-md-6">
+		        			<h4><i class="fas fa-map-marked-alt"></i> 6.9 km</h4>
+		        		</div>
+		        	</div>
+			        <br><br>
+			        <h4>About</h4><hr>
+			        <h6>Patan Durbar Square is situated at the centre of the city of Lalitpur in Nepal. Patan Durbar Square is a marvel of Newar architecture. The square floor is tiled with red bricks. There are many temples and idols in the area. The main temples are aligned opposite of the western face of the palace. The entrance of the temples faces east, towards the palace. There is also a bell situated in the alignment beside the main temples.<br><br>
+			        The Square also holds old Newari residential houses. There are other temples and structures in and around Patan Durbar Square built by the Newa People.<br><br> A center of both Hinduism and Buddhism, Patan Durbar Square has 136 "bahals"(courtyards) and 55 major temples.</h6><br><br>
+					<h4>The Major attraction of Patan Darbar Square</h4><hr>
+					<h6>1. Patan Museum</h6>
+					<h6>2. Hiranya Varna Mahavihar</h6>
+					<h6>3. Golden Window</h6>
+					<h6>4. Mahabouddha Temple</h6>
+					<h6>5. Golden Temple</h6>
+					<h6>5. Krishna Temple</h6>
+					<br><br>
+					<h4>Map</h4><hr>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.443056870874!2d85.32313241506127!3d27.67269808280614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c50daa2fb1%3A0x6f197fa38097b530!2sPatan%20Durbar%20Square!5e0!3m2!1sen!2snp!4v1627728212812!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+		<div class="card col-lg-3 col-md-4 col-sm-4 col-xs-6 filter recipes cake">
+	        <img src="img/cake.jpg" class="img-responsive image">
+	        <div class="heading">
+	        	<button class="bton" onclick="myFunction5()"><i class="book5 far fa-bookmark"></i></button>
+	        </div>
+	        <div class="body">
+	        	<h2>Sponge Cake</h2>
+	        	<div class="row info">
+	        		<div class="col-md-4">
+	        			<i class="fa fa-clock-o"></i> 45 minutes
+	        		</div>	        		
+	        		<div class="col-md-4">
+	        			<i class="fas fa-utensils" aria-hidden="true"></i> 8-10 servings
+	        		</div>
+	        		<div class="col-md-4">
+	        			<i class="fas fa-fire"></i> 370 calories
+	        		</div>
+	        	</div>
+	        	<p>
+		        	Ratings: 
+		        	<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</p>
+				<button type="button" class="btn btn-dark" onclick="cakefunction()">Full Recipe</button>
+	        </div>
+	    </div>
+	    <div class="cakefull fullbody">
+	    	<div class="close">
+		    	<span class="float-right" onclick="closefunction()"><button><i class="fas fa-times"></i></button></span>
+		    </div>
+	    	<div class="container top">
+		        <h2>Sponge Cake</h2><br>
+		        <img src="img/cake.jpg" class="img-responsive" height="550" width="100%" align="centre">
+		        	<div class="row info">
+		        		<div class="col-md-4">
+		        			<h4><i class="fa fa-clock-o "></i> 45 minutes</h4>
+		        		</div>	        		
+		        		<div class="col-md-4">
+		        			<h4><i class="fas fa-utensils" aria-hidden="true"></i> 8-10 servings</h4>
+		        		</div>
+		        		<div class="col-md-4">
+		        			<h4><i class="fas fa-fire"></i> 370 calories</h4>
+		        		</div>
+		        	</div>
+		        	<br>
+		        	<h4>Ingredients of Sponge Cake</h4><hr>
+					- 225g softened butter<br>
+					- 225g golden caster sugar<br>
+					- 4 large eggs<br>
+					- ½ lemon, zested<br>
+					- 1 tsp vanilla extract<br>
+					- 225g self-raising flour<br>
+					- splash of milk<br>
+					- Optional fillings of lemon curd, jam, lightly whipped cream<br><br><br>
+					<h4>Process</h4><hr>
+					<h5>Step 1</h5>
+					Heat oven to 180C/160C fan/gas 4, butter and line the base of two 20cm spring-form cake tins with baking parchment.<br><br>
+					<h5>Step 2</h5>
+					Using an electric whisk beat the butter and sugar together until pale and fluffy. Crack the eggs in one at a time and whisk well, scraping down the sides of the bowl after each addition. <br><br>
+					<h5>Step 3</h5>
+					Add the lemon zest, vanilla, flour, milk and a pinch of salt. Whisk until just combined then divide the mixture between the two tins.<br><br>
+					<h5>Step 4</h5>
+					Bake in the centre of the oven for 25-30 mins until a skewer inserted into the middle of each cake comes out clean. After 10 mins remove the cakes from their tins and leave to cool completely on a wire rack.<br><br>
+					<h5>Step 5</h5>
+					Fill how you like. My personal favourite is a good dollop of lemon curd and some fresh cream, then dust the top with icing sugar. Will keep for 3 days.<br><br><br>
+					<div class="rating">
+					<h3>Rate this Recipe</h3>
+					<input type="radio" name="rating" id="rating-5">
+			      	<label for="rating-5"></label>
+			      	<input type="radio" name="rating" id="rating-4">
+			      	<label for="rating-4"></label>
+			      	<input type="radio" name="rating" id="rating-3">
+			      	<label for="rating-3"></label>
+			      	<input type="radio" name="rating" id="rating-2">
+			      	<label for="rating-2"></label>
+			      	<input type="radio" name="rating" id="rating-1">
+			      	<label for="rating-1"></label>
+				</div>
+			</div>
+	    </div>
+	    <div class="card col-lg-3 col-md-4 col-sm-4 col-xs-6 filter profile ludana">
+	        <img src="img/ludana.jpg" class="img-responsive image">
+	        <div class="heading">
+	        	<button class="bton" onclick="myFunction6()"><i class="book6 far fa-bookmark"></i></button>
+	        </div>
+	        <div class="body">
+	        	<h2>Ludana Joshi</h2>
+	        	<div class="row logo">
+	        		<div class="col-md-3">
+	        			<i class="fab fa-instagram h"></i>
+	        		</div>	        		
+	        		<div class="col-md-3">
+	        			<i class="fab fa-facebook h"></i>
+	        		</div>
+	        		<div class="col-md-3">
+	        			<i class="fab fa-viber h"></i>
+	        		</div>
+	        		<div class="col-md-3">
+	        			<i class="fab fa-whatsapp h"></i>
+	        		</div>
+	        	</div>
+	        	<p>
+		        	Student
+				</p>
+				<button type="button" class="btn btn-dark" onclick="ludanafunction()">Full Detail</button>
+	        </div>	        
+	    </div>
+	    <div class="ludanafull fullbody">
+		    <div class="close">
+		    	<span class="float-right" onclick="closefunction()"><button><i class="fas fa-times"></i></button></span>
+		    </div>
+	    	<div class="container top">
+		        <h2>Ludana Joshi</h2><br>
+		        <img src="img/ludana.jpg" class="img-responsive" height="550" width="100%" align="centre">
+		        	<div class="row logo">
+		        		<div class="col-md-3">
+			        		<h4><i class="fab fa-instagram h"> Instagram</i></h4>
+			        	</div>	        		
+			       		<div class="col-md-3">
+			       			<h4><i class="fab fa-facebook h"> Facebook</i></h4>
+			       		</div>
+			       		<div class="col-md-3">
+			       			<h4><i class="fab fa-viber h"> Viber</i></h4>
+			       		</div>
+			       		<div class="col-md-3">
+			       			<h4><i class="fab fa-whatsapp h"> Whatsapp</i></h4>
+		        		</div>
+		        	</div>
+			        <br>
+			        <h4>Details</h4><hr>
+					Age- 15years<br>
+					Address- Chabahil, Kathmandu<br>
+					Contact number- 9843678999<br>
+					Father's Name- Binayak Lal Joshi<br>
+					Mother's Name- Shila Joshi<br>
+					D.O.B.- 28 July,2005<br>
+					Blood Group- AB+<br>
+					E-mail- ludanajoshi@gmail.com
+					Nationality- Nepali<br>
+					<br><br>
+					<h4>Education</h4><hr>
+					<h6>Lasana Pre School</h6>
+					Gongabu, Kathmandu<br>
+					Playgroup - U.K.G.<br>
+					2009 - 2011<br><br>
+					<h6>Modern Indian School</h6>
+					Chobhar, Kathmandu<br>
+					Class 1 - Ongoing<br>
+					2012 - ongoing<br><br><br>
+					<h4>About</h4><hr>
+					<h6>A hardworking, funloving person who is currently studying in grade 10 at modern indian school. Aspires to pursue computer engineering as a carrer in the future. Loves making drawings and edits. A big fan of music.</h6>
+					<h6>A person who loves to dance and is a creative person. Fond of writing imaginary stories and reading. Gets her creativity from watching movies and dramas.</h6><br><br>
+					<h4>Photos</h4><hr>
+					<div class="row">
+						<div class="col-md-3 gallery">
+							<img src="img/l.jpg" height="350" width="350">
+						</div>
+						<div class="col-md-3 gallery">
+							<img src="img/lj.jpg" height="350" width="350">
+						</div>
+						<div class="col-md-3 gallery">
+							<img src="img/lpt.jpg" height="350" width="350">							
+						</div>
+					</div>
+			</div>
+		</div>
+	    <div class="card col-lg-3 col-md-4 col-sm-4 col-xs-6 filter kalinchowk scenery">
+	        <img src="img/hard climb.jpg" class="img-responsive image">
+	        <div class="heading">
+	        	<button class="bton" onclick="myFunction7()"><i class="book7 far fa-bookmark"></i></button>
+	        </div>
+	        <div class="body">
+	        	<h2>Kalinchowk, Dolakha</h2>
+	        	<div class="row info">
+	        		<div class="col-md-6">
+	        			<i class="fa fa-clock-o "></i> 5 hour 18 mins
+	        		</div>	        		
+	        		<div class="col-md-6">
+	        			<i class="fas fa-map-marked-alt"></i> 144.3 km
+	        		</div>
+	        	</div>
+	        	<p>
+		        	Kalinchowk is a Rural municipality located within the Dolakha District of the Bagmati Province of
+				</p>
+				<button type="button" class="btn btn-dark" onclick="kalinchowkfunction()">Full Detail</button>
+	        </div>
+	    </div>
+	    <div class="kalinchowkfull fullbody">
+		    <div class="close">
+		    	<span class="float-right" onclick="closefunction()"><button><i class="fas fa-times"></i></button></span>
+		    </div>
+	    	<div class="container top">
+		        <h2>Kalinchowk, Dolakha</h2><br>
+		        <img src="img/hard climb.jpg" class="img-responsive" height="600" width="100%" align="centre">
+		        	<div class="row info">
+		        		<div class="col-md-6">
+		        			<h4><i class="fa fa-clock-o "></i> 5 hour 18 mins</h4>
+		        		</div>	        		
+		        		<div class="col-md-6">
+		        			<h4><i class="fas fa-map-marked-alt"></i> 144.3 km</h4>
+		        		</div>
+		        	</div>
+			        <br>
+			        <h4>Details</h4><hr>
+					<h6>Province: Bagmati</h6>
+					<h6>District name: Dolakha</h6>
+					<h6>Country: Nepal</h6><br><br>
+					<h4>About</h4><hr>
+			        <h6>Kalinchowk is a Rural municipality located within the Dolakha District of the Bagmati Province of Nepal. The municipality spans 132.49 square kilometres (51.15 sq mi) of area, with a total population of 22,954 according to a 2011 Nepal census.</h6><br>
+			        <h6>Kalinchowk is a hill station and a tourist hotspot. It is located on 3842 miters of altitude and about 150 km northeast from national capital Kathmandu. The place is best known for trekking and skiing. During the December, January and February (mainly Paush and Magh in Nepali months) snowfalls in Kalinchowk.</h6><br>
+			        <h4>Kalinchowk Bhagwati Temple</h4><hr>
+			        <h6>Kalinchok Bhagwati Temple is a Hindu shrine located in Kalinchok Rural Municipality in Dolkha District of Nepal.</h6><br>
+					<h6>It is situated in Kalinchok Village (ward no. 1 of Kalinchok RM) at the altitude of 3,842 m (12,605 ft) from sea level. It is a part of Gaurishankar Conservation Area from where two rivers Sun Kosi and Tamakoshi rivers are sourced.</h6><br>
+					<h6>It is famous for the trek to the shrine. It used to be the only way to the temple, but recently a cable car has been added to help with the growing number of visitors.</h6><br><br>
+					<h4>Map</h4><hr>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14123.708765584233!2d86.0287856816729!3d27.75039162438396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ebceeb582f4371%3A0x2acc53ee3ec3670e!2sKalinchok%2C%20Kuri%20Village!5e0!3m2!1sen!2snp!4v1627729781982!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+	    <div class="card col-lg-3 col-md-4 col-sm-4 col-xs-6 filter recipes bread">
+	        <img src="img/bread.jpg" class="img-responsive image">
+	        <div class="heading">
+	        	<button class="bton" onclick="myFunction8()"><i class="book8 far fa-bookmark"></i></button>
+	        </div>
+	        <div class="body">
+	        	<h2>French Bread</h2>
+	        	<div class="row info">
+	        		<div class="col-md-4">
+	        			<i class="fa fa-clock-o"></i> 2 hours 40 mins
+	        		</div>	        		
+	        		<div class="col-md-4">
+	        			<i class="fas fa-utensils" aria-hidden="true"></i> 30 servings
+	        		</div>
+	        		<div class="col-md-4">
+	        			<i class="fas fa-fire"></i> 94 calories
+	        		</div>
+	        	</div>
+	        	<p>
+		        	Ratings: 
+		        	<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+				</p>
+				<button type="button" class="btn btn-dark" onclick="breadfunction()">Full Recipe</button>
+	        </div>
+	    </div>
+	    <div class="breadfull fullbody">
+	    	<div class="close">
+		    	<span class="float-right" onclick="closefunction()"><button><i class="fas fa-times"></i></button></span>
+		    </div>
+	    	<div class="container top">
+		        <h2>French Bread</h2><br>
+		        <img src="img/bread.jpg" class="img-responsive" height="550" width="100%" align="centre">
+		        	<div class="row info">
+		        		<div class="col-md-4">
+		        			<h4><i class="fa fa-clock-o"></i> 2 hours 40 mins</h4>
+		        		</div>	        		
+		        		<div class="col-md-4">
+		        			<h4><i class="fas fa-utensils" aria-hidden="true"></i> 30 servings</h4>
+		        		</div>
+		        		<div class="col-md-4">
+		        			<h4><i class="fas fa-fire"></i> 94 calories</h4>
+		        		</div>
+		        	</div>
+		        	<br>
+		        	<h4>Ingredients of French Bread</h4><hr>
+					- 6 cups all-purpose flour<br>
+					- 2½ (.25 ounce) packages active dry yeast<br>
+					- 1½ teaspoons salt<br>
+					- 2 cups warm water (110 degrees F/45 degrees C)<br>
+					- 1 tablespoon cornmeal<br>
+					- 1 egg white<br>
+					- 1 tablespoon water<br><br><br>
+					<h4>Process</h4><hr>
+					<h5>Step 1</h5>
+					In a large bowl, combine 2 cups flour, yeast and salt. Stir in 2 cups warm water, and beat until well blended using a stand mixer with a dough hook attachment. Using a wooden spoon, stir in as much of the remaining flour as you can.<br><br>
+					<h5>Step 2</h5>
+					On a lightly floured surface, knead in enough flour to make a stiff dough that is smooth and elastic. Knead for about 8 to 10 minutes total. Shape into a ball. Place dough in a greased bowl, and turn once. Cover, and let rise in a warm place until doubled.<br><br>
+					<h5>Step 3</h5>
+					Punch dough down, and divide in half. Turn out onto a lightly floured surface. Cover, and let rest for 10 minutes. Roll each half into large rectangle. Roll up, starting from a long side. Moisten edge with water and seal. Taper ends.<br><br>
+					<h5>Step 4</h5>
+					Grease a large baking sheet. Sprinkle with cornmeal. Place loaves, seam side down, on the prepared baking sheet. Lightly beat the egg white with 1 tablespoon of water, and brush on. Cover with a damp cloth. Let rise until nearly doubled, 35 to 40 minutes.<br><br>
+					<h5>Step 5</h5>
+					With a very sharp knife, make 3 or 4 diagonal cuts about 1/4 inch deep across top of each loaf. Bake in a preheated 375 degrees F (190 degrees C) oven for 20 minutes. Brush again with egg white mixture. Bake for an additional 15 to 20 minutes, or until bread tests done. If necessary, cover loosely with foil to prevent over browning. Remove from baking sheet, and cool on a wire rack.<br><br>
+					<div class="rating">
+						<h3>Rate this Recipe</h3>
+						<input type="radio" name="rating" id="rating-5">
+				      	<label for="rating-5"></label>
+				      	<input type="radio" name="rating" id="rating-4">
+				      	<label for="rating-4"></label>
+				      	<input type="radio" name="rating" id="rating-3">
+				      	<label for="rating-3"></label>
+				      	<input type="radio" name="rating" id="rating-2">
+				      	<label for="rating-2"></label>
+				      	<input type="radio" name="rating" id="rating-1">
+				      	<label for="rating-1"></label>
+					</div>
+			</div>
+	    </div>
+	    <div class="card col-lg-3 col-md-4 col-sm-4 col-xs-6 filter chips recipes">
+	        <img src="img/chips chilli.jpg" class="img-responsive image">
+	        <div class="heading">
+	        	<button class="bton" onclick="myFunction9()"><i class="book9 far fa-bookmark"></i></button>
+	        </div>
+	        <div class="body">
+	        	<h2>Chips Chilli</h2>
+	        	<div class="row info">
+	        		<div class="col-md-4">
+	        			<i class="fa fa-clock-o"></i> 20 minutes
+	        		</div>	        		
+	        		<div class="col-md-4">
+	        			<i class="fas fa-utensils" aria-hidden="true"></i> 4 servings
+	        		</div>
+	        		<div class="col-md-4">
+	        			<i class="fas fa-fire"></i> 472 calories
+	        		</div>
+	        	</div>
+	        	<p>
+		        	Ratings: 
+		        	<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+				</p>
+				<button type="button" class="btn btn-dark" onclick="chipsfunction()">Full Recipe</button>
+	        </div>
+		</div>
+		<div class="chipsfull fullbody">
+	    	<div class="close">
+		    	<span class="float-right" onclick="closefunction()"><button><i class="fas fa-times"></i></button></span>
+		    </div>
+	    	<div class="container top">
+		        <h2>Chips Chilli</h2><br>
+		        <img src="img/chips chilli.jpg" class="img-responsive" height="550" width="100%" align="centre">
+		        	<div class="row info">
+		        		<div class="col-md-4">
+		        			<h4><i class="fa fa-clock-o"></i> 20 minutes</h4>
+		        		</div>	        		
+		        		<div class="col-md-4">
+		        			<h4><i class="fas fa-utensils" aria-hidden="true"></i> 4 servings</h4>
+		        		</div>
+		        		<div class="col-md-4">
+		        			<h4><i class="fas fa-fire"></i> 472 calories</h4>
+		        		</div>
+		        	</div>
+		        	<br>
+		        	<h4>Ingredients of Chips Chilli</h4>
+					<h5>Salt and Chilli Seasoning</h5><hr>
+					- salt as required<br>
+					- ½ tbsp caster sugar<br>
+					- ½ tsp Chinese 5 spice<br>
+					- chilli flakes as required<br>
+					- ½ tsp garlic powder<br>
+					- ¼ tsp ground ginger<br>
+					- ¼ tsp ground white pepper<br><br>
+					<h5>For Garnishing</h5><hr>
+					- 1 tablespoon coriander leaves<br><br>
+					<h5>For Chips</h5><hr>
+					- 1lb cooked potato chips/fries<br>
+					- 1 tbsp vegetable oil<br>
+					- ½ large onion, cut into chunks<br>
+					- 1 green pepper, washed and cut into bite-sized chunks<br>
+					- 2 red chillies, washed and finely sliced<br>
+					- 1 tbsp rice wine<br>
+					- 1 tsp salt and chilli seasoning<br><br><br>
+					<h4>Process</h4><hr>
+					<h5>Step 1</h5>
+					Heat the oil in a wok and fry the onion, green pepper and chillies for 3 minutes.<br><br>
+					<h5>Step 2</h5>
+					Pour in the rice wine and let it sizzle for 2 minutes while continuing to stir.<br><br>
+					<h5>Step 3</h5>
+					Add the chips/fries to the stir fry and season with the salt and chilli mixture.<br><br>
+					<h5>Step 4</h5>
+					Serve immediately as a side dish to a fakeaway Chinese meal. Enjoy!<br><br>
+				<div class="rating">
+					<h3>Rate this Recipe</h3>
+					      <input type="radio" name="rating" id="rating-5">
+					      <label for="rating-5"></label>
+					      <input type="radio" name="rating" id="rating-4">
+					      <label for="rating-4"></label>
+					      <input type="radio" name="rating" id="rating-3">
+					      <label for="rating-3"></label>
+					      <input type="radio" name="rating" id="rating-2">
+					      <label for="rating-2"></label>
+					      <input type="radio" name="rating" id="rating-1">
+					      <label for="rating-1"></label>
+				</div>
+			</div>
+	    </div>
+	</div>
+	<!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+	<script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
